@@ -1,0 +1,189 @@
+* {
+  all: unset;
+}
+
+// Variable Color's
+$background: #000000;
+$foreground: #EBDBB2;
+
+$black: #1D1D1D;
+$gray: #928374;
+$red: #CC241D;
+$green: #B8BB26;
+$yellow: #FABD2D;
+$blue: #83A598;
+$magenta: #D3869B;
+$cyan: #8EC07C;
+$white: $foreground;
+$archlogo: #CC241D;
+
+// The bar
+.eww_bar {
+  background-color: $background;
+  padding: 0.5rem;
+  border-radius: 0px;
+}
+
+// Launcher
+.launcher_icon {
+  color: $archlogo;
+  font-family: "Material Design Icons Desktop";
+  font-size: 1.7em;
+  padding: 1rem 0 1rem 0;
+}
+
+// Workspaces
+.works {
+  font-family: "Material Design Icons Desktop";
+  padding: 0.5rem 0.7rem 0.5rem 0.7rem;
+  background-color: $black;
+  border-radius: 5px;
+}
+
+.workspace-focused {
+  font-size: 18px;
+  color: $yellow;
+  margin: 0.35rem 0 0.35rem 0;
+}
+
+.workspace-occupied {
+  font-size: 18px;
+  color: $white;
+  margin: 0.35rem 0 0.35rem 0;
+}
+
+.workspace-empty {
+  font-size: 18px;
+  color: $gray;
+  margin: 0.35rem 0 0.35rem 0;
+}
+
+// icons info
+.control {
+  padding: 0.5rem;
+  background-color: $black;
+  border-radius: 5px;
+}
+
+.trayicon {
+  background-repeat: no-repeat;
+  background-size: 25px;
+  min-height: 25px;
+  min-width: 7px;
+  margin: 0.2rem 0 0.2rem 0;
+}
+
+.bar-updates-text {
+  font-family: "VictorMono Nerd Font";
+  font-size: 14px;
+  font-weight: Bold;
+  color: #8ea6c4;
+  padding: 0.2rem 0 0.2rem 0.3rem;
+}
+
+scale trough {
+  all: unset;
+  background-color: $background;
+  border-radius: 5px;
+  min-height: 80px;
+  min-width: 10px;
+  margin: 0.3rem 0 0.3rem 0.1rem;
+}
+
+.volbar trough highlight {
+  background: linear-gradient($red, $yellow, $green);
+  border-radius: 5px;
+}
+
+// Clock
+.time {
+  font-family: VictorMono Nerd Font;
+  font-weight: bold;
+  font-size: 1.2em;
+  background-color: $black;
+  color: $white;
+  border-radius: 5px;
+  padding: 0.7rem 0 0.5rem 0;
+  margin: 0.5rem 0 0.5rem 0;
+}
+
+// Calendar
+.cal-box {
+  background-color: $background;
+  border-radius: 5px;
+  font-family: VictorMono Nerd Font;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+
+  .cal-inner-box {
+    padding: 1rem 1rem 0.2rem;
+
+    .cal {
+      &.highlight {
+        padding: 10rem;
+      }
+
+      padding: 0.8rem 0.25rem 0rem;
+      margin-left: 10px;
+    }
+  }
+}
+
+calendar:selected {
+  color: $yellow;
+}
+
+calendar.header {
+  color: $red;
+  font-weight: bold;
+}
+
+calendar.button {
+  color: $magenta;
+}
+
+calendar.highlight {
+  color: $green;
+  font-weight: bold;
+}
+
+calendar:indeterminate {
+  color: $gray;
+}
+
+// Powermenu
+.powermenu {
+  font-family: Material Design Icons Desktop;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.button-bspres,
+.button-reb,
+.button-lock,
+.button-quit,
+.button-off {
+  padding: 0.5rem 0.2rem 0.3rem 0.2rem;
+}
+
+.button-off {
+  margin-bottom: 0.5rem;
+  color: $red;
+}
+
+.button-bspres {
+  color: $blue;
+}
+
+.button-reb {
+  color: $yellow;
+}
+
+.button-quit {
+  color: $green;
+}
+
+.button-lock {
+  color: $magenta;
+}
